@@ -375,7 +375,6 @@ def linear_regression(data: List[Dict[str, float]]) -> Tuple[float, float]:
     n = len(data)
     x_mean = sum(x) / n
     y_mean = sum(y) / n
-    x_mean, y_mean
     numerator = sum((x[i] - x_mean) * (y[i] - y_mean) for i in range(n))
     denominator = sum((x[i] - x_mean) ** 2 for i in range(n))
     m = numerator / denominator
