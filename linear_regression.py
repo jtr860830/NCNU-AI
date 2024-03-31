@@ -386,4 +386,3 @@ def linear_regression(data: List[Dict[str, float]]) -> Tuple[float, float]:
 if __name__ == "__main__":
     m, b = linear_regression(data)
     print(f"y = {m}x + {b}")
-
